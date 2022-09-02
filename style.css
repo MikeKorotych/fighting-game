@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", cursive;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.timer {
+  background-color: black;
+  background-color: #1d1812;
+  width: 100px;
+  height: 50px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border: 2px solid white;
+}
+
+.enemy-health__wr,
+.player-health__wr {
+  position: relative;
+  width: 100%;
+  border: 2px solid white;
+  overflow: hidden;
+}
+
+.player-health__wr {
+  display: flex;
+  justify-content: flex-end;
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 25px;
+}
+
+.enemy-health__wr {
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 25px;
+}
+
+.player-health__bg,
+.enemy-health__bg {
+  background-color: rgba(255, 0, 0, 0.849);
+  height: 30px;
+  width: 100%;
+}
+
+#enemyHealth,
+#playerHealth {
+  position: absolute;
+  background: #a78bfa;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#enemyHealth {
+  left: 0;
+}
+
+#playerHealth {
+  width: 100%;
+}
